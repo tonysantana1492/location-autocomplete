@@ -66,11 +66,7 @@ export default function App() {
           id="location-input"
           provider={provider}
           apiKey={apiKey}
-          placeholder={
-            provider === 'google'
-              ? 'Enter a city, address or place…'
-              : 'Enter a city, address or place…'
-          }
+          placeholder="Enter a city, address or place…"
           onSelect={handleSelect}
           onError={(err) => console.error('LocationAutocomplete error:', err)}
         />
